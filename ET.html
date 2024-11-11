@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies | Code Craft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+
+        .heading {
+            text-align: center;
+            color: #1a73e8;
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+
+        .heading p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .tech-category {
+            margin-bottom: 40px;
+        }
+
+        .tech-category h2 {
+            color: #1a73e8;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .tech-category h2:hover {
+            color: #f5a623;
+        }
+
+        .tech-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tech-category li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .tech-category li:hover {
+            background-color: #f0f8ff;
+            padding: 5px 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .tech-category li strong {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .tech-category li span {
+            color: #555;
+            font-style: italic;
+        }
+
+        .description {
+            color: #777;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #777;
+            font-size: 1rem;
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .heading {
+                font-size: 2rem;
+            }
+
+            .tech-category h2 {
+                font-size: 1.6rem;
+            }
+
+            .tech-category li {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .tech-category li span {
+                margin-top: 5px;
+            }
+
+            .description {
+                font-size: 0.95rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Technologies I Use</h1>
+            <p>Get an overview of the programming languages, frameworks, and tools I use to build responsive, scalable, and robust applications.</p>
+        </div>
+
+        <!-- Frontend Technologies Section -->
+        <div class="tech-category">
+            <h2>Frontend Development</h2>
+            <ul>
+                <li>
+                    <strong>HTML5</strong>
+                    <span>Markup Language for Web Pages</span>
+                </li>
+                <li>
+                    <strong>CSS3</strong>
+                    <span>Styling Language for Layout and Design</span>
+                </li>
+                <li>
+                    <strong>JavaScript</strong>
+                    <span>Programming Language for Interactivity</span>
+                </li>
+                <li>
+                    <strong>React</strong>
+                    <span>A JavaScript Library for Building User Interfaces</span>
+                </li>
+                <li>
+                    <strong>Bootstrap</strong>
+                    <span>A Framework for Responsive Web Design</span>
+                </li>
+            </ul>
+            <p class="description">These technologies are used to build the visual and interactive aspects of websites. HTML5 structures the content, CSS3 adds styles, JavaScript enables dynamic functionality, and React helps in building complex, reusable components. Bootstrap accelerates the development process with ready-to-use components and a mobile-first design philosophy.</p>
+        </div>
+
+        <!-- Backend Technologies Section -->
+        <div class="tech-category">
+            <h2>Backend Development</h2>
+            <ul>
+                <li>
+                    <strong>Node.js</strong>
+                    <span>JavaScript Runtime for Server-Side Programming</span>
+                </li>
+                <li>
+                    <strong>Express.js</strong>
+                    <span>Web Framework for Node.js</span>
+                </li>
+                <li>
+                    <strong>MongoDB</strong>
+                    <span>NoSQL Database for Scalable Applications</span>
+                </li>
+                <li>
+                    <strong>MySQL</strong>
+                    <span>Relational Database Management System</span>
+                </li>
+                <li>
+                    <strong>Python (Flask/Django)</strong>
+                    <span>Web Frameworks for Scalable Backend Solutions</span>
+                </li>
+            </ul>
+            <p class="description">Node.js and Express.js are used for building fast, scalable server-side applications. MongoDB and MySQL are the core databases used to manage application data, with MongoDB being a NoSQL database for more flexibility and MySQL for structured data management. Python frameworks like Flask and Django help in creating more complex backend systems, ensuring scalability and flexibility.</p>
+        </div>
+
+        <!-- Tools and Deployment Section -->
+        <div class="tech-category">
+            <h2>Development Tools & Deployment</h2>
+            <ul>
+                <li>
+                    <strong>Git</strong>
+                    <span>Version Control System</span>
+                </li>
+                <li>
+                    <strong>GitHub</strong>
+                    <span>Online Repository for Code Sharing</span>
+                </li>
+                <li>
+                    <strong>Docker</strong>
+                    <span>Containerization for Application Deployment</span>
+                </li>
+                <li>
+                    <strong>NGINX</strong>
+                    <span>Web Server for Load Balancing</span>
+                </li>
+                <li>
+                    <strong>Postman</strong>
+                    <span>API Testing Tool</span>
+                </li>
+            </ul>
+            <p class="description">These tools are essential for efficient development and deployment of web applications. Git and GitHub help in version control and collaboration, Docker simplifies the deployment process through containerization, and NGINX ensures better performance through load balancing. Postman is used for testing and documenting APIs to ensure they function as expected.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 Code Craft. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

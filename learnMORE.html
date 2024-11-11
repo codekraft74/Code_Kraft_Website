@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More | Code Craft</title>
+    <style>
+        /* Basic reset and styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #f4f7fc, #e1e9f1);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .header {
+            width: 100%;
+            padding: 30px 15px;
+            background: gray;
+            color: white;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .intro {
+            max-width: 800px;
+            text-align: center;
+            margin: 40px 20px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-card {
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+            cursor: pointer;
+            transform: scale(0.95);
+        }
+
+        .section-card:hover {
+            transform: scale(1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-icon {
+            font-size: 3rem;
+            color: #1a73e8;
+            margin-bottom: 15px;
+        }
+
+        .section-card h3 {
+            color: #1a73e8;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .section-card p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .section-card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #1a73e8;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .section-card a:hover {
+            background: #155bb5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: gray;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sections-container {
+                flex-direction: column;
+            }
+
+            .section-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <header class="header">Learn More</header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <p>Discover more about my journey as a full-stack developer, the technologies I specialize in, and the projects I've completed. Dive into the details and see how I bring ideas to life using the latest web technologies.</p>
+    </section>
+
+    <!-- Sections Container -->
+    <div class="sections-container">
+
+        <!-- About Section -->
+        <div class="section-card">
+            <div class="section-icon">👨‍💻</div>
+            <h3>About Me</h3>
+            <p>Explore my background, the journey that led me to become a full-stack developer, and the skills I've developed along the way.</p>
+            <a href="CV.html">Read More</a>
+        </div>
+
+        <!-- Technologies Section -->
+        <div class="section-card">
+            <div class="section-icon">🔧</div>
+            <h3>Technologies</h3>
+            <p>Get an overview of the programming languages, frameworks, and tools I use to build responsive, scalable, and robust applications.</p>
+            <a href="ET.html">Explore Technologies</a>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section-card">
+            <div class="section-icon">📂</div>
+            <h3>Projects</h3>
+            <p>Check out my portfolio of projects showcasing my expertise in both frontend and backend development.</p>
+            <a href="#">View Projects</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section-card">
+            <div class="section-icon">📞</div>
+            <h3>Contact</h3>
+            <p>Interested in working together? Let’s connect and discuss how we can turn your ideas into reality!</p>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Code Craft. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

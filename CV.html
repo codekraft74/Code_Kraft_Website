@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Code Craft</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            gap: 30px;
+        }
+
+        .left-column {
+            flex: 1;
+            padding: 20px;
+            border-right: 2px solid #ddd;
+            text-align: center;
+        }
+
+        .left-column h2 {
+            font-size: 2rem;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .left-column p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .left-column img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-column h2 {
+            font-size: 1.8rem;
+            color: #1a73e8;
+            margin-bottom: 20px;
+        }
+
+        .experience, .education, .skills {
+            margin-bottom: 20px;
+        }
+
+        .experience, .education, .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .experience li, .education li, .skills li {
+            margin-bottom: 10px;
+        }
+
+        .experience h3, .education h3, .skills h3 {
+            font-size: 1.2rem;
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            position: fixed;
+            bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .left-column, .right-column {
+                border-right: none;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .left-column img {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Column - Introduction with Image -->
+        <div class="left-column">
+            <img src="web/1731323720758-removebg-preview.png" alt="Your Image"> <!-- Replace with your image URL -->
+            <h2>About Me</h2>
+            <p>Hello, I'm Aanchal uke, a passionate and dedicated Full Stack Developer. With expertise in both front-end and back-end technologies, I create scalable, efficient, and user-friendly web applications. I’m always striving to learn new tools and technologies to build cutting-edge solutions for my clients.</p>
+        </div>
+
+        <!-- Right Column - CV-like Content -->
+        <div class="right-column">
+            <!-- Experience Section -->
+            <div class="experience">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Full Stack Developer </strong>
+                        <p>Developed and maintained scalable web applications using React, Node.js, Express, and MongoDB. Led a team of developers in building a real-time collaborative application.</p>
+                    </li>
+                    <li>
+                        <strong>Frontend Developer</strong> 
+                        <p>Designed and implemented user interfaces using HTML, CSS, JavaScript, and React. Worked closely with UX/UI teams to enhance the user experience.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>B.Tech in AI & ML</strong> -RGPV University (2022 - 2026)</li>
+                    <li><strong>Diploma in Web Development</strong> - -RGPV Institute (2021 - 2022)</li>
+                </ul>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Frontend: HTML, CSS, JavaScript, React, Bootstrap</li>
+                    <li>Backend: Node.js, Express, MongoDB, SQL,Python</li>
+                    <li>Version Control: Git, GitHub</li>
+                    <li>Tools: Docker, Webpack, Postman, NGINX</li>
+                    <li>Agile Methodology & Scrum</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Code Craft. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

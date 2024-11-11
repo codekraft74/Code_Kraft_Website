@@ -1,0 +1,36 @@
+<!-- original.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Original Document</title>
+</head>
+<body>
+    <div class="first">
+        <h1 id="topH">This is my first test</h1>
+    </div>
+
+    <div class="second"> 
+        <h3 id="des">This is a description</h3>
+    </div>
+
+    <script>
+        // Load updated content from Local Storage if it exists
+        function loadContent() {
+            const savedHeader = localStorage.getItem("topText");
+            const savedDescription = localStorage.getItem("desText");
+
+            if (savedHeader) {
+                document.getElementById("topH").textContent = savedHeader;
+            }
+            if (savedDescription) {
+                document.getElementById("des").textContent = savedDescription;
+            }
+        }
+
+        // Call the function to load content when the page loads
+        window.onload = loadContent;
+    </script>
+</body>
+</html>

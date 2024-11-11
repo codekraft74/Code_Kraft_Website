@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #003366; /* Deep Blue for professionalism */
+            color: white;
+            padding: 20px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .navbar nav {
+            margin-left: auto;
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar nav ul li {
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #ff5733; /* Orange accent for hover effect */
+        }
+
+        .cta {
+            background-color: #ff5733; /* Orange Call-to-Action */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #e94e00;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .hero-content {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.8rem;
+            color: #003366;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1rem;
+            color: #ff5733;
+            font-weight: 600;
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .hero-content .buttons .btn {
+            background-color: #003366;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin-right: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-content .buttons .btn:hover {
+            background-color: #ff5733; /* Hover effect */
+        }
+
+        .hero-image img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 50%;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #f1f3f5;
+            margin-top: 60px;
+        }
+
+        .info-section .info {
+            text-align: center;
+            flex: 1;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin: 0 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-section .info:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-section .info h3 {
+            font-size: 1.5rem;
+            color: #003366;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .info-section .info p {
+            font-size: 1.1rem;
+            color: #777;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image img {
+                width: 60%;
+                margin-bottom: 20px;
+            }
+
+            .info-section {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .info-section .info {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo" id="topH">Code_kraft</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="servisec.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="freeCONS.html" class="cta">Get Free Consultation</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle" id="subT">Building Robust Solutions for the Modern Web</p>
+            <h1 id="contant">Code Craft:Mastering the Art of Full-Stack Web Development</h1>
+            <p id="dis">Welcome to Code Craft, where innovation meets functionality in the world
+                 of web development. As a dedicated full-stack developer, I specialize in 
+                 transforming complex ideas into seamless, user-centered digital experiences.
+                  My expertise spans from robust backend solutions to engaging, responsive 
+                  frontends. Whether you're a startup, a growing business, or an established
+                   enterprise, I bring a mix of creativity and precision to every project,
+                    ensuring your vision is not only realized but elevated. Let’s build 
+                    something exceptional together – a digital presence that stands out
+                     and scales with you."
+            </p>
+            <div class="buttons">
+                <a href="learnMORE.html" class="btn">Learn More</a>
+                <a href="hireMe.html" class="btn">Hire Me</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="web/1731323720758-removebg-preview.png" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="info">
+            <h3>Quality Design</h3>
+            <p>Creating pixel-perfect designs with a focus on user experience and brand identity.</p>
+        </div>
+        <div class="info">
+            <h3>Responsive Websites</h3>
+            <p>Building responsive websites that work seamlessly across all devices and screen sizes.</p>
+        </div>
+        <div class="info">
+            <h3>24/7 Support</h3>
+            <p>Providing continuous support to ensure your website stays up-to-date and functional.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+
+    
+</body>
+</html>

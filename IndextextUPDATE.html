@@ -1,0 +1,61 @@
+<!-- update.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Content</title>
+</head>
+<body>
+    <h2>Update Content for Original Document</h2>
+
+    
+    <label for="newHeader">New Header Text:</label>
+    <input type="text" id="newHeader" placeholder="Enter new header text"><br><br>
+
+    <label for="subtitle"> New subtitile text : </label>
+    <input type="text" id="subtitle" placeholder="Enter new subtitle"><br><br>
+
+    <label for="contant"> New contant text: </label>
+    <input type="text" id="contant" placeholder="Enter new contant"><br><br>
+
+    <label for="discribtion"> New contant discribtion: </label>
+    <input type="text" id="disc" placeholder="Enter new discribtion"><br><br>
+
+
+    <button onclick="saveContent()">Save Content</button>
+
+    <script>
+        // Function to save new content to Local Storage
+        function saveContent() {
+            const newHeaderText = document.getElementById("newHeader").value;
+            
+            const newSubtitleText =document.getElementById('subtitle').value;
+            const newContentText =document.getElementById('contant').value;
+            const newDiscribText =document.getElementById('disc').value;
+
+            // Save new content to Local Storage
+            if (newHeaderText) {
+                localStorage.setItem("topText", newHeaderText);
+            }
+            
+            if (newSubtitleText) {
+                localStorage.setItem("heroSubtitle",newSubtitleText );
+            }
+            
+            if (newContentText) {
+                localStorage.setItem("heroTitle",newContentText );
+            }
+            
+            if (newDiscribText) {
+                localStorage.setItem("heroDescription", newDiscribText);
+            }
+            
+        
+            
+            alert("Content saved! Open index.html to see the updates.");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
